@@ -1,18 +1,65 @@
-import Button from "../components/Button"
+import Image from 'next/image'
+import profilePic from '../public/me.png'
 
 const Home = () => {
 
 
   return (
+    <div>
+      
     <section className="mt-16">
-        <h1 className="text-7xl font-bold">Hi I&apos;m <span className="dark:text-purple-600">Brandon</span></h1>
-        <h3 className="text-4xl my-3">Software Engineer</h3>
-        <p className="text-gray-700 mb-8">
-        Helping developers build a faster web. Teaching about web development, serverless, and React / Next.js.
+      <Image src={profilePic} alt="ProfileImage" className="object-contain w-40 h-40 rounded-full"/>
+        <h1 className="text-7xl font-bold dark:text-black-900">Brandon Chin</h1>
+        <h3 className="text-4xl my-5">Software Engineer</h3>
+        <p className="mb-8">
         </p>
-        <Button className="bg-purple-600 text-white px-6">Hire Me</Button>
     </section>
+    
+    <section className="mt-20">
+        <h1 className="text-4xl dark:text-white">Experience</h1>
+       
+    </section>
+
+    <section className="mt-16">
+        <h1 className="text-2xl dark:text-white font-bold">Lighthouse | OSLabs</h1>
+        <h3>Co-Creator</h3>
+    </section>
+
+    <section className="mt-16">
+        <h1 className="text-2xl dark:text-white font-bold">JPI Healthcare Solutions</h1>
+        <h3>Regional Technical Sales Manager</h3>
+    </section>
+
+    <section className="mt-16">
+        {/* <h1 className="text-2xl dark:text-white font-bold">JPI Healthcare Solutions</h1> */}
+        <h3>Technical Systems Trainer</h3>
+    </section>
+
+    <section className="mt-20">
+        <h1 className="text-4xl dark:text-white">Open Source Projects</h1>
+       
+    </section>
+
+    <section className="mt-16">
+        <h1 className="text-2xl dark:text-white font-bold">VOT</h1>
+        <h3>Co-Creator</h3>
+    </section>
+
+    <section className="mt-16">
+        <h1 className="text-2xl dark:text-white font-bold">HomeGrub</h1>
+        <h3>Co-Creator</h3>
+    </section>
+
+    <section className="mt-16">
+        <h1 className="text-2xl dark:text-white font-bold">Green Planet</h1>
+        <h3>Co-Creator</h3>
+    </section>
+    </div>
   )
 }
+
+
+
+
 
 export default Home

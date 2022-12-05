@@ -1,7 +1,20 @@
+import YouTube from "react-youtube";
+
 const NotFound = () => {
-    return (
-      <div className="text-center mt-20">Page Not Found</div>
-    )
-  }
-  
-  export default NotFound
+  const opts = {
+    height: "390",
+    width: "640",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
+  return (
+    <div className="text-5xl">
+      WHAT ARE YOU DOING?? THAT PAGE DOESNT EXIST???
+      <YouTube videoId="dQw4w9WgXcQ" opts={opts} />
+    </div>
+  );
+};
+
+export default NotFound;
