@@ -4,15 +4,23 @@ const Home = () => {
 
 
   return (
+    <div>
     <section className="mt-16">
-        <h1 className="text-7xl font-bold">Hi I&apos;m <span className="dark:text-purple-600">Brandon</span></h1>
+        <h1 className="text-7xl font-bold dark:text-black-900">Brandon Chin</h1>
         <h3 className="text-4xl my-3">Software Engineer</h3>
-        <p className="text-gray-700 mb-8">
-        Helping developers build a faster web. Teaching about web development, serverless, and React / Next.js.
+        <p className="mb-8">
+        My Goal is to help Developers while having fun in my sandbox
         </p>
-        <Button className="bg-purple-600 text-white px-6">Hire Me</Button>
     </section>
+    <section className="mt-16">
+        <h1 className="text-7xl dark:text-purple-600 font-bold">Projects</h1>
+    </section>
+    </div>
   )
 }
+
+
+
+
 
 export default Home
