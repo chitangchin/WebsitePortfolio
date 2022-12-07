@@ -1,0 +1,62 @@
+model OauthAccessToken {
+  id                    String           @id @default(auto()) @map("_id") @db.ObjectId
+  userId                String
+  applicationId         String
+  token                 String           @unique
+  refreshToken          String?          @unique
+  tokenExpiresAt        DateTime?        @db.Timestamp
+  refreshTokenExpiresAt DateTime?        @db.Timestamp
+  scopes                Json             @default("[]")
+  createdAt             DateTime         @default(now())
+  updatedAt             DateTime         @default(now()) @updatedAt
+  application           OauthApplication @relation(fields: [applicationId], references: [id])
+  user                  User             @relation(fields: [userId], references: [id])
+  @@index([applicationId])
+  @@index([userId])
+}
+
+model OauthAccessGrant {
+  id            String           @id @default(auto()) @map("_id") @db.ObjectId
+  userId        String
+  applicationId String
+  token         String           @unique
+  expiresAt     DateTime         @db.Timestamp
+  redirectUri   String
+  codeChallengeMethod String?
+  codeChallenge String?
+  scopes        Json             @default("[]")
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @default(now()) @updatedAt
+  application   OauthApplication @relation(fields: [applicationId], references: [id])
+  user          User             @relation(fields: [userId], references: [id])
+  @@index([applicationId])
+  @@index([userId])
+}
+
+model OauthApplication {
+  id           String             @id @default(auto()) @map("_id") @db.ObjectId
+  name         String
+  clientId     String             @unique
+  clientSecret String
+  redirectUris Json               @default("[]")
+  scopes       Json               @default("[]")
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @default(now()) @updatedAt
+  grants       Json               @default("[]")
+  accessTokens OauthAccessToken[]
+  accessGrants OauthAccessGrant[]
+}
+
+model UserIdentity {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String
+  provider  String
+  uid       String
+  name      String?
+  email     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+  user      User     @relation(fields: [userId], references: [id])
+  @@index([userId])
+  @@unique([provider, uid])
+}
