@@ -15,44 +15,48 @@ describe('Nav Menu', () => {
             cy.location('pathname').should('include', '')
         })
 
-        it('Should Route to schedule a call meeting and go back and forward in browser history', () => {
-            cy.get('[data-cy="calendar"]').click();
+        it('Should Route to schedule a call meeting', () => {
+            cy.get('[data-cy="calendar"]').should('have.attr', 'href','https://calendly.com/chitangchin/meeting')
+        })
 
-            cy.location('pathname').should('include', 'Calendar')
+        it('Should Route to Guestbook and go back and forward in browser history', () => {
+            cy.get('[data-cy="guestbook"]').click();
+
+            cy.location('pathname').should('include', 'GuestBook')
 
             cy.go('back')
-            cy.location('pathname').should('not.include', 'Calendar')
+            cy.location('pathname').should('not.include', 'GuestBook')
 
             cy.go('forward')
-            cy.location('pathname').should('include', 'Calendar')
+            cy.location('pathname').should('include', 'GuestBook')
 
             // clicking back
             cy.go(-1)
-            cy.location('pathname').should('not.include', 'Calendar')
+            cy.location('pathname').should('not.include', 'GuestBook')
 
             // clicking forward
             cy.go(1)
-            cy.location('pathname').should('include', 'Calendar')
+            cy.location('pathname').should('include', 'GuestBook')
         })
 
         it('Should Route to sandbox and go back and forward in browser history', () => {
-            cy.get('[data-cy="sandbox"]').click();
+            cy.get('[data-cy="about"]').click();
 
-            cy.location('pathname').should('include', 'Sandbox')
+            cy.location('pathname').should('include', 'About')
 
             cy.go('back')
-            cy.location('pathname').should('not.include', 'Sandbox')
+            cy.location('pathname').should('not.include', 'About')
 
             cy.go('forward')
-            cy.location('pathname').should('include', 'Sandbox')
+            cy.location('pathname').should('include', 'About')
 
             // clicking back
             cy.go(-1)
-            cy.location('pathname').should('not.include', 'Sandbox')
+            cy.location('pathname').should('not.include', 'About')
 
             // clicking forward
             cy.go(1)
-            cy.location('pathname').should('include', 'Sandbox')
+            cy.location('pathname').should('include', 'About')
         })
 
         it('Should Route to 404 error and go back and forward in browser history', () => {

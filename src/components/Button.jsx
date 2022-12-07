@@ -1,6 +1,6 @@
-const darkmodeButton = ({ children, className, onClick }) => {
+const darkmodeButton = ({ children, className }) => {
   return (
-    <button className={`p-2 rounded-md hover:ring-2 hover:ring-gray-300 ${className}`}onClick={onClick}>
+    <button className={`place-self-center p-2 rounded-md dark:hover:ring-2 dark:hover:ring-white hover:ring-2 hover:ring-black ${className}`}>
         {children}
     </button>
   )
