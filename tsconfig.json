@@ -18,6 +18,6 @@
     "outDir": "dist",
     "noImplicitAny": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/DarkModeButton.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/DarkModeButton.jsx", "src/pages/openAIDalle.tss", "src/pages/OpenAIDalle.jsx"],
   "exclude": ["node_modules"]
 }
