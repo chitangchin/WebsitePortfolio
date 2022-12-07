@@ -12,7 +12,7 @@ export default async function handler(req, res) {
         size: "1024x1024",
     });
 
-    if (!response.data) throw new Error('Unable to get image');
+    if (!response.data) throw new Error('error');
     console.log('received url ' + response.data.data[0].url);
 
     res.status(200).json({ imageURL: response.data.data[0].url })
