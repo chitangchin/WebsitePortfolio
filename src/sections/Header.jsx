@@ -6,9 +6,11 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '/', test: 'home', current: false },
-  { name: 'Schedule a Call/Meeting', href: '/Calendar', test: 'calendar', current: false },
-  { name: 'Sandbox', href: '/Sandbox', test: 'sandbox', current: false },
+  { name: 'Home', href: '/', current: false },
+  { name: 'Guestbook', href: '/Guestbook', current: false },
+  { name: 'Schedule a Call/Meeting', href: '/Calendar', current: false },
+  { name: 'About Me', href: '/About', current: false },
+  
 ]
 
 function classNames(...classes) {
