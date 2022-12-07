@@ -19,7 +19,7 @@ export default function AuthNav() {
                         e.preventDefault()
                         signIn()
                     }}
-                        className="bg-black text-white dark:bg-white">
+                        className="bg-black text-white dark:bg-white dark:text-black">
                         <Link href={`/api/auth/signin`}>
                             Sign in
                         </Link>
