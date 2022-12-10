@@ -3,7 +3,6 @@ import Link from "next/link"
 import Button from "../components/Button"
 import { useSession } from "next-auth/react"
 import DisplayForm from "../components/GuestBookForm"
-import { GetServerSideProps } from 'next'
 import prisma from '../../lib/prisma'
 import { makeSerializable } from '../../lib/util'
 import DisplayList from "../components/GuestBookListDisplay"
