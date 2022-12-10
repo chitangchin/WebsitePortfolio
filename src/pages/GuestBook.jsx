@@ -10,6 +10,7 @@ import DisplayList from "../components/GuestBookListDisplay"
 
 export default function GuestBookPage({ chat }) {
   const { data } = useSession()
+  const random = ""
 
   if (data) {
     return (
