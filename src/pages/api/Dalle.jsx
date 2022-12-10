@@ -13,7 +13,6 @@ export default async function handler(req, res) {
     });
 
     if (!response.data) throw new Error('error');
-    console.log('received url ' + response.data.data[0].url);
 
     res.status(200).json({ imageURL: response.data.data[0].url })
 }

@@ -19,7 +19,6 @@ export default function OpenAIDalle() {
         });
         const imageResponse = await response.json();
         // setImageURL(imageResponse.imageURL)
-        console.log(imageResponse);
         setImageURL(imageResponse.imageURL);
         setLoading(0);
     }

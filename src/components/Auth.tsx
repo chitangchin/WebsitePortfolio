@@ -13,15 +13,15 @@ export default function AuthNav() {
 
     return (<>
         <div className="flex flex-grid">
-            <p>
+            <div>
                 {!session && (
                     <Button onClick={(e: any) => {
                         e.preventDefault()
                         signIn()
                     }}
-                        className="bg-black text-white dark:bg-white dark:text-black">
+                        className="bg-black text-white dark:bg-white dark:text-black ">
                         <Link href={`/api/auth/signin`}>
-                            Sign in
+                            Sign in with github to write a message
                         </Link>
                     </Button>
                 )}
@@ -57,7 +57,7 @@ export default function AuthNav() {
                         </div>
                     </div>
                 )}
-            </p>
+            </div>
         </div>
     </>
     )
