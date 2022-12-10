@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from "next/image"
 
 export default function OpenAIDalle() {
     const [prompt, setPrompt] = useState('');
@@ -35,7 +36,12 @@ export default function OpenAIDalle() {
                   <input type="text" id="prompt" name="prompt" className="mx-5 text-3xl bg-transparent" onChange={(e) => setPrompt(e.target.value)} placeholder="Add a prompt here ..."></input>
               </form>
             <div className="mt-5">
-                <img src={imageURL} alt="generatedImage"></img>
+                            <Image
+                            alt="dalle image"
+                            src={imageURL}
+                            width={2250}
+                            height={1390}
+                            />
             </div>
             </div>
         )

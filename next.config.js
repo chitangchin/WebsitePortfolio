@@ -2,7 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+};
 
-module.exports = nextConfig
+// oaidalleapiprodscus.blob.core.windows.net
 
+module.exports = nextConfig;
+
+module.exports = {
+  images: {
+    domains: ["oaidalleapiprodscus.blob.core.windows.net"],
+  },
+};
