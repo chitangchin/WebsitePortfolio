@@ -1,0 +1,7 @@
+{
+    "build": {
+      "env": {
+        "DATABASE_URL": "mongodb+srv://brandon:Star42761@cluster0.coewcym.mongodb.net/%3FretryWrites=true&w=majority"
+      }
+    }
+  }
