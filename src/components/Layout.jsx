@@ -11,10 +11,9 @@ const Layout = ({ children }) => {
             </Head>
             <div className="min-h-screen flex flex-col">
                 <Header />
-                <main className="flex-grow">
+                <main className="flex-grow mb-20">
                     {children}
                 </main>
-                <Footer />
             </div>
         </>
     )

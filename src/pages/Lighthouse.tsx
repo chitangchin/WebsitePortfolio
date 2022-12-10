@@ -1,6 +1,6 @@
 const Lighthouse = () => {
   return (
-    <div>Lighthouse</div>
+    <div></div>
   )
 }
 
