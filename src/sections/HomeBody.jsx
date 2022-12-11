@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import LogoButtons from "../components/logoButtons"
+import LogoButtons from "../components/LogoButtons"
 
 const Home = () => {
   return (
