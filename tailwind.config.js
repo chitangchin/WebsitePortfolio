@@ -7,7 +7,16 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        'github-white':
+        "url('/images/github-mark-white.png')",
+        'github-black':
+        "url('/images/github-mark.png')",
+        'linkedin':
+        "url('/images/LI-In-Bug.png')"
+      })
+    },
   },
   plugins: [],
 }
