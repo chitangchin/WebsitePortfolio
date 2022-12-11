@@ -54,7 +54,7 @@ export default function OpenAIDalle() {
                 <button className="text-3xl place-self-center rounded-xl p-2 bg-white dark:bg-black dark:text-white text-black dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white " onClick={handleSubmit}>Submit</button>
                 <input type="text" id="prompt" name="prompt" className="mx-5 text-3xl bg-transparent" onChange={(e) => setPrompt(e.target.value)} placeholder="Add your prompt here ..."></input>
             </form>
-            <p className="my-10 ring-2 ring-white rounded text-xl">
+            <p className="my-10 ring-2 dark:ring-white ring-black rounded text-xl">
                 Here are some words I found triggers the automatic filter system and doesnt render an image:
 <br></br>
 <br></br>

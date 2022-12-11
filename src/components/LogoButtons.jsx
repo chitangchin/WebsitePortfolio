@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 const logoButtons = () => {
     return (
         <div className="flex flex-row space-x-12 ">
