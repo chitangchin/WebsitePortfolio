@@ -25,10 +25,10 @@ const Home = () => {
       <section className="mt-16">
         <Link href="/Lighthouse">
           <button data-cy="lighthouse" className="text-2xl font-bold bg-transparent dark:hover:bg-white hover:bg-gray-900 text-gray-900 dark:text-white hover:text-white dark:hover:text-gray-900 py-2 px-4">
-            Lighthouse | OSLabs
+            Lighthouse | Open Source Product | OSLabs
           </button>
         </Link>
-        <h3 className="mx-4">Co-Creator</h3>
+        <h3 className="mx-4">Software Engineer</h3>
       </section>
 
       <section className="mt-16">
