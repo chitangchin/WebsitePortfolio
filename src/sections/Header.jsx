@@ -10,6 +10,7 @@ const navigation = [
   { name: 'GuestBook', href: '/GuestBook', test: "guestbook", current: false },
   { name: 'Calendar', href: 'https://calendly.com/chitangchin/meeting', test: "calendar", current: false },
   { name: 'SandBox', href: '/SandBox', test: "about", current: false },
+  { name: 'Certifications', href: 'https://www.credly.com/users/brandon-chin.5d7de3ce/badges', test: "about", current: false },
 
 ]
 
