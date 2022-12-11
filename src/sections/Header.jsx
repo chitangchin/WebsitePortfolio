@@ -9,7 +9,6 @@ const navigation = [
   { name: 'Home', href: '/', test: "home", current: false },
   { name: 'GuestBook', href: '/GuestBook', test: "guestbook", current: false },
   { name: 'Calendar', href: 'https://calendly.com/chitangchin/meeting', test: "calendar", current: false },
-  { name: 'About Me', href: '/About', test: "about", current: false },
   { name: 'SandBox', href: '/SandBox', test: "about", current: false },
 
 ]

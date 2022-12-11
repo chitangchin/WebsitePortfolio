@@ -15,8 +15,12 @@ const Home = () => {
         />
         <h1 className="text-7xl font-bold dark:text-black-900">Brandon Chin</h1>
         <h3 className="text-4xl my-5">Software Engineer</h3>
+        
+        <h1 className="text-2xl my-5">chitangb.chin@gmail.com</h1>
+
         <LogoButtons/>
-        <p className="mb-8"></p>
+        <p className="mb-8">
+        </p>
       </section>
 
       {/* Professional Experience */}
@@ -26,20 +30,20 @@ const Home = () => {
       </section>
 
       <section className="mt-16">
-        <Link href="/Lighthouse">
+        <a href="https://github.com/oslabs-beta/Lighthouse">
           <button data-cy="lighthouse" className="text-2xl font-bold bg-transparent dark:hover:bg-white hover:bg-gray-900 text-gray-900 dark:text-white hover:text-white dark:hover:text-gray-900 py-2 px-4">
             Lighthouse | Open Source Product
           </button>
-        </Link>
+        </a>
         <h3 className="mx-4">Software Engineer</h3>
       </section>
 
       <section className="mt-16">
-        <Link href="/JPI">
+        <a href="https://www.jpihealthcare.com/">
           <button data-cy="jpi" className="text-2xl font-bold bg-transparent dark:hover:bg-white hover:bg-gray-900 text-gray-900 dark:text-white hover:text-white dark:hover:text-gray-900 py-2 px-4">
             JPI Healthcare Solutions
           </button>
-        </Link>
+        </a>
         <h3 className="mx-4">Regional Technical Sales Manager</h3>
       </section>
 
@@ -54,30 +58,27 @@ const Home = () => {
       </section>
 
       <section className="mt-16">
-        <Link href="/VOA">
+        <a href="https://github.com/chitangchin/VotingOnArticles">
           <button data-cy="voa" className="text-2xl font-bold bg-transparent dark:hover:bg-white hover:bg-gray-900 text-gray-900 dark:text-white hover:text-white dark:hover:text-gray-900 py-2 px-4">
             VOA
           </button>
-        </Link>
-        <h3 className="mx-4">Co-Creator</h3>
+        </a>
       </section>
 
       <section className="mt-16">
-        <Link href="/HomeGrub">
+        <a href="https://github.com/chitangchin/HomeGrub/tree/joy/test">
           <button data-cy="homegrub" className="text-2xl font-bold bg-transparent dark:hover:bg-white hover:bg-gray-900 text-gray-900 dark:text-white hover:text-white dark:hover:text-gray-900 py-2 px-4">
             HomeGrub
           </button>
-        </Link>
-        <h3 className="mx-4">Co-Creator</h3>
+        </a>
       </section>
 
       <section className="mt-16">
-        <Link href="/GreenPlanet">
+        <a href="https://github.com/chitangchin/Green-Planet">
           <button data-cy="greenplanet" className="text-2xl font-bold bg-transparent dark:hover:bg-white hover:bg-gray-900 text-gray-900 dark:text-white hover:text-white dark:hover:text-gray-900 py-2 px-4">
             Green Planet
           </button>
-        </Link>
-        <h3 className="mx-4">Co-Creator</h3>
+        </a>
       </section>
     </div>
   );

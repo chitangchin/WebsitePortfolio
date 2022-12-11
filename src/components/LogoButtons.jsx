@@ -1,6 +1,6 @@
 const logoButtons = () => {
     return (
-        <div className="flex flex-row space-x-12 ">
+        <div className="flex flex-row space-x-12 my-10 ">
             <a href="https://github.com/chitangchin">
             <button className="transition duration-300 ease-in-out hover:scale-110 bg-github-black dark:bg-github-white h-24 w-24 bg-contain"></button>
             </a>
