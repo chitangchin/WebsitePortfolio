@@ -7,11 +7,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Home', href: '/', test: "home", current: false },
-  { name: 'GuestBook', href: '/GuestBook', test: "guestbook", current: false },
   { name: 'Calendar', href: 'https://calendly.com/chitangchin/meeting', test: "calendar", current: false },
   { name: 'SandBox', href: '/SandBox', test: "about", current: false },
   { name: 'Certifications', href: 'https://www.credly.com/users/brandon-chin.5d7de3ce/badges', test: "about", current: false },
-
+  { name: 'Resume', href: 'https://docs.google.com/document/d/14uk7NSFTwJ50Di7946IHA-8Ehd6RnDrMqC9YFBkDqfg/edit?usp=sharing', test: "resume", current: false }
 ]
 
 function classNames(...classes) {
